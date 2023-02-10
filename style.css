@@ -117,7 +117,9 @@ body {
     padding: 0;
   }
   main {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .logo {
@@ -127,10 +129,17 @@ body {
   .container {
     background-image: url('./pexels-tirachard-kumtanom-733852.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container > div {
+    flex: 1;
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Merriweather', serif;
   }
 
@@ -141,8 +150,8 @@ body {
   }
 
   input {
-    width: 50%;
-    height: 45px;
+    width: 40%;
+    height: 25px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid rgb(43, 41, 41);
