@@ -121,7 +121,6 @@ body {
   }
   main {
     grid-template-columns: 1fr;
-    /* height: 100%; */
   }
 
   .logo {
