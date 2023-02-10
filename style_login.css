@@ -5,7 +5,6 @@
 
 html {
   background-color: rgb(43, 41, 41);
-  padding: 50px;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -21,7 +21,6 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 1110px;
     font-size: 30px;
   }
 
@@ -33,9 +32,10 @@ body {
   cite {
     position: relative;
     top: 20%;
-    left: 10%;
-    font-size: 1.5em;
-    color: azure;
+    left: 1%;
+    font-size: 1.2em;
+    color: rgb(50, 56, 56);
+    width: 100px;
   }
 
   .container {
@@ -43,44 +43,39 @@ body {
     flex-direction: column;
     padding-top: 2%;
     padding-left: 5%;
-    width: 50vw;
   }
 
-  p {
-    font-size: 1.2em;
+  .container p {
+    font-size: 18px;
     font-family: 'Merriweather', serif;
-    max-width: 35vw;
   }
 
   .login {
     background-image: url('pexels-tirachard-kumtanom-733852.jpg');
     background-size: cover;
-    max-width: 90%;
   }
 
   .form_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 100%;
   }
 
   .left,
   .right {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 60%;
+    gap: 5px;
   }
 
   input {
     max-width: 20vw;
-    height: 45px;
+    height: 25px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid rgb(43, 41, 41);
-    padding-left: 5px;
-    font-size: 1em;
+    padding: 5px;
+    font-size: 15px;
     font-family: 'Merriweather', serif;
   }
 
@@ -94,7 +89,12 @@ body {
 
   input::placeholder {
     font-family: 'Merriweather', serif;
-    font-size: 25px;
+    font-size: 10px;
+  }
+
+  label {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
   }
 
   .btn {
@@ -103,8 +103,9 @@ body {
     background-color: #fff;
     border: 1px solid #7f8cff;
     border-radius: 8px;
-    height: 90px;
+    height: 50px;
     max-width: 720px;
+    font-size: 20px;
   }
 
   .btn:hover {
@@ -130,19 +131,16 @@ body {
   .container {
     background-image: url('pexels-tirachard-kumtanom-733852.jpg');
     background-size: cover;
-    /* height: 1000px; */
   }
 
   p {
     font-size: 1.2em;
     font-family: 'Merriweather', serif;
-    /* max-width: 35vw; */
   }
 
   form {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     padding-left: 30px;
   }
 
