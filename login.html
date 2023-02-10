@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3b9cd09213.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/style_login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <cite
+          >"The secret to success is to start before you're ready." <br />
+          -Marie Forleo</cite
+        >
+      </div>
+      <div class="container">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you relize your deepest dreams. <br />
+        <br>  Sign up now,to get started. <br />
+        </p>
+        <div class="login">
+          <h2>Let's do this</h2>
+          <form action="/login" method="POST">
+            <div class="form_container">
+              <div class="left">
+                <label for="username">First name</label>
+                <div class="input">
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                    min="3"
+                    max="30"
+                    required
+                  />
+                </div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ex: dt@gmail.com"
+                />
+                <label for="password">Password</label>
+                <div class="input">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    min="8"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="right">
+                <label for="lastname">Last name</label>
+                <div class="input">
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Lastname"
+                    min="3"
+                    max="30"
+                    required
+                  />
+                </div>
+                <label for="number">Number</label>
+                <div class="input">
+                  <input
+                    type="number"
+                    name="num"
+                    id="number"
+                    placeholder="ex: +223 51501805"
+                    required
+                  />
+                </div>
+                <label for="password">Confirm Password</label>
+                <div class="input">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="input">
+              <input type="submit" value="Create Account" class="btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
